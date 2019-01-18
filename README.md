@@ -41,3 +41,8 @@ python main.py -t
 ```
 python main.py -i
 ```
+
+### 参考
+[Globally and Locally Consistent Image Completion](http://iizuka.cs.tsukuba.ac.jp/projects/completion/data/completion_sig2017.pdf)
+
+[shtamura/glcic  -github](https://github.com/shtamura/glcic)
