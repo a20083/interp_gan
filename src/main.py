@@ -76,10 +76,7 @@ if __name__ == '__main__':
     net = Network(slit_masks, cons)
     netC,c_train = net.build_generator_with_own_loss()
     netD = net.build_discriminator_with_own_loss()
-
-    # from util.output_result import draw_heatmap
-    # draw_heatmap(cons['SAVE_PATH'],'test',np.squeeze(real_data,axis=-1))
-
+    
     ########
     # 学習  #
     ########
