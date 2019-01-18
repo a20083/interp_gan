@@ -1,12 +1,18 @@
 # interp_gan
 
-###環境
-python 3.5.6
-keras 2.2.0
-matplotlib 2.2.2
-numpy 1.14.3
-scipy 1.1.0
-tensorflow 1.12.0
+### 環境
+python 3.5.6  
+keras 2.2.0  
+matplotlib 2.2.2  
+numpy 1.14.3  
+scipy 1.1.0  
+tensorflow 1.12.0  
+
+### 設定
+confing.pyにデータが入ったディレクトリまでのパスを設定する。  
+"SAVE_PATH"を設定すると、そのディレクトリ以下に/completion_net , /discriminator  
+のディレクトリが作成される
+
 
 ### 実行方法
 
