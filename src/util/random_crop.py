@@ -12,7 +12,7 @@ def _open_png_images(dir_path):
     folder = os.listdir(dir_path)
 
     #pngファイル以外のファイルは削除
-    pattern = r".*.bmp"
+    pattern = r".*.png"
     p = re.compile(pattern)
     pngs = filter(lambda x: p.match(x),folder)
 
