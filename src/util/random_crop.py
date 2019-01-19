@@ -42,7 +42,6 @@ def random_crop(dir_path,H,W,multiple_num):
     w_range = nd_images.shape[1] - H
     h_range = nd_images.shape[2] - W
 
-    tmp = nd_images.shape[0] # 画像枚数
     images = []
     for num,nd_img in enumerate(nd_images):
         for i in range(multiple_num):
