@@ -36,7 +36,7 @@ def random_crop(dir_path,H,W,multiple_num):
         multiple_num(int) :何枚画像を生成するか
 
     # Returns:
-        None
+        images(ndarray):randomにcropした画像
     '''
     nd_images = _open_png_images(dir_path)
     w_range = nd_images.shape[1] - H
@@ -56,7 +56,7 @@ def random_crop(dir_path,H,W,multiple_num):
 def remove_not_covered_img(dir_path):
     '''画像全体の2割以上depthがない場合削除する
     # Arguments:
-
+        dir_path(str): 保存した画像の絶対パス
     '''
     H = 256
     W = 256
