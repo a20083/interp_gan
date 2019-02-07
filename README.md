@@ -46,3 +46,7 @@ python main.py -i
 [Globally and Locally Consistent Image Completion](http://iizuka.cs.tsukuba.ac.jp/projects/completion/data/completion_sig2017.pdf)
 
 [shtamura/glcic  -github](https://github.com/shtamura/glcic)
+
+### 注意
+Pythonの環境構築は[こちら](https://www.python.jp/install/windows/install_py3.html)  
+(注) tensorflowでは3.7.xが対応してない可能性があるので3.6.xの最新をダウンロードすること  
