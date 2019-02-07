@@ -27,7 +27,7 @@ $$
 depth=256^2 \times Red+256 \times Green+Blue
 $$
 で値を計算している
-![stanford_bunny](image_repository/bunny_1.png)  
+![stanford_bunny](https://github.com/a20083/interp_gan/blob/master/image/bunny_1.png)  
 
 ---
 #### png_to_mask(dir_path)
@@ -99,7 +99,7 @@ mask.ndim == 4
 train.pyで計算したlossをloss_listに渡している    
 この関数を呼び出すと下図のようなグラフが描画される  
 仮引数のylabel_nameは下図左のdepth_lossにあたる  
-![depth_loss](image_repository/depth_loss.png)
+![depth_loss](https://github.com/a20083/interp_gan/blob/master/image/depth_loss.png)
 
 
 ---
@@ -108,7 +108,7 @@ plot_loss_1と同じ
 この関数を呼び出すと下図のようなグラフが描画される  
 ちなみにdiscriminatorの学習は失敗である  
 損失は普通0にならない
-![d_loss](image_repository/d_loss.png)
+![d_loss](https://github.com/a20083/interp_gan/blob/master/image/d_loss.png)
 
 ---
 #### save_images(save_path,images,save_name)
@@ -122,7 +122,7 @@ plot_loss_1と同じ
 右側のcolorbarのスケールは仮引数のvmin,vmaxで指定  
 今回使った胃の形状データのdepth画像は最大が約3200なので、vmin=0,vmax=3500で設定している  
 
-![c_result](image_repository/c_result30000_1.png)
+![c_result](https://github.com/a20083/interp_gan/blob/master/image/c_result30000_1.png)
 
 ---
 
@@ -140,11 +140,11 @@ rgbをdepthにする関数(png_to_depth)を作ったので、これも作った�
 一枚の画像から複数枚画像をランダムでcropする
 
 元の画像
-![stomach](image_repository/0000-3b.bmp)
+![stomach](https://github.com/a20083/interp_gan/blob/master/image/0000-3b.bmp)
 
 cropされた画像  
-![crop1](image_repository/crop_0.png)  
-![crop2](image_repository/crop_1.png)
+![crop1](https://github.com/a20083/interp_gan/blob/master/image/crop_0.png)  
+![crop2](https://github.com/a20083/interp_gan/blob/master/image/crop_1.png)
 
 #### remove_not_covered_img(dir_path)
 上の元画像をrandom_cropをすると、周りの黒い部分のみの画像も得られてしまう
@@ -159,7 +159,7 @@ cropされた画像
 
 画像をランダムでcropする関数で、学習で使う  
 Local discriminatorに画像を入れるために使う
-![network](image_repository/glcic_network.png)
+![network](https://github.com/a20083/interp_gan/blob/master/image/glcic_network.png)
 (参照)[Globally and Locally Consistent Image Completion](http://iizuka.cs.tsukuba.ac.jp/projects/completion/data/completion_sig2017.pdf)
 
 src/train.py
