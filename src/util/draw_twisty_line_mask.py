@@ -6,8 +6,9 @@ import os
 
 def twisty_line(x0=0,y0=0,height=256):
     '''
-    x0(int): start_width
-    y0(int): start_height
+    # Arguments:
+        x0(int): start_width
+        y0(int): start_height
     '''
     line = []
     for i in range(height):
@@ -22,11 +23,12 @@ def twisty_line(x0=0,y0=0,height=256):
 
 def draw_twisty_line_mask(save_path,save_name,size,b_color,l_color):
     '''
-    save_path(str): 保存先までの絶対パス
-    save_name(str): 保存名
-    size(tuple): (width,height)
-    b_color(int): background color
-    l_color(int): line color
+    # Arguments:
+        save_path(str): 保存先までの絶対パス
+        save_name(str): 保存名
+        size(tuple): (width,height)
+        b_color(int): background color
+        l_color(int): line color
     '''
 
     im = Image.new('L',size,b_color)

@@ -6,12 +6,16 @@ from PIL import Image
 import numpy as np
 
 def rand_mask(batch_size=32,g_size=128,l_size=64,channel=1):
-    '''
+    '''ランダムで穴の空いたマスクを作成する
     # Arguments:
-        batch_size(int): バッチサイズ
-        g_size(int): global size
-        l_size(int): local size
-        channel(int): チャネル
+        batch_size(int):    バッチサイズ
+        g_size(int):        global size
+        l_size(int):        local size
+        channel(int):       チャネル
+
+    # Returns:
+        points(ndarray):      (x,y)
+        l_area_mask(ndarray): (n,H,W,channel) 穴が空いている部分が1
     '''
     points = []
     l_area_mask = []
@@ -29,10 +33,11 @@ def rand_mask(batch_size=32,g_size=128,l_size=64,channel=1):
 
 
 def slit_mask(image_size=128,batch_size=32):
-    '''スリットバイナリマスクを返す
-    #Arguments:
-        image_size(int):
-    #Returns:
+    '''直線のスリットバイナリマスクを返す
+    # Arguments:
+        image_size(int):　画像サイズ
+        batch_size(int):  バッチサイズ
+    # Returns:
         slit_bin_masks(ndarray):(batch,H,W,1)
     '''
     # バイナリマスクを作成
@@ -46,7 +51,7 @@ def slit_mask(image_size=128,batch_size=32):
 def object_mask(image_data=None):
     '''depthがある部分のマスク画像
     # Arguments:
-        image_data(ndarray): (n,H,W,1) (例)(32,128,128,1)
+        image_data(ndarray): (n,H,W,1) 
 
     # Returns:
         obj_mask(ndarray): depthがある部分が1,それ以外は0
