@@ -11,10 +11,13 @@ def twisty_line()
 #pngファイル以外のファイルは削除
 pattern = r".*.png"
 ```
+
 pngファイル以外の画像をloadしたいときは、
+
 ```
 pattern = r".*.bmp"
 ```
+
 と書き換えること
 
 ---
