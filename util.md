@@ -1,6 +1,15 @@
 ## draw_twisty_line_mask.py
 
-def twisty_line()
+####  twisty_line(x0,y0,height=256)
+
+曲線を描くための座標が入ったlistが得られる
+この関数を単体で使うことはない
+
+----
+#### draw_twisty_line_mask(save_path,save_name,size,b_color,l_color)
+
+曲線のマスクを作成する関数
+変数```step```の数字によって線と線の幅を調節できる。
 
 ---
 ## load_data.py
